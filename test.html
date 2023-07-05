@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Wycena domków szkieletowych</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Domki szkieletowe</a>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#" data-toggle="modal" data-target="#quotationModal">Wycena</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Quotation Modal -->
+  <div class="modal fade" id="quotationModal" tabindex="-1" role="dialog" aria-labelledby="quotationModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="quotationModalLabel">Wycena domku szkieletowego</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="quotationForm">
+            <div class="form-group">
+              <label for="houseType">Typ domku:</label>
+              <select class="form-control" id="houseType" onchange="updatePrice()">
+                <option value="100000">Dom 1</option>
+                <option value="150000">Dom 2</option>
+                <option value="200000">Dom 3</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="options">Dodatkowe opcje:</label>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="airConditioning" onchange="updatePrice()">
+                <label class="form-check-label" for="airConditioning">Klimatyzacja (+10,000)</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="biggerWindows" onchange="updatePrice()">
+                <label class="form-check-label" for="biggerWindows">Większe okna (+5,000)</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="terrace" onchange="updatePrice()">
+                <label class="form-check-label" for="terrace">Taras (+20,000)</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="totalPrice">Cena całkowita:</label>
+              <input type="text" class="form-control" id="totalPrice" readonly>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" onclick="submitForm()">Wyślij</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    function updatePrice() {
+      var houseType = parseInt(document.getElementById("houseType").value);
+      var airConditioning = document.getElementById("airConditioning").checked;
+      var biggerWindows = document.getElementById("biggerWindows").checked;
+      var terrace = document.getElementById("terrace").checked;
+      var totalPrice = houseType;
+
+      if (airConditioning) {
+        totalPrice += 10000;
+      }
+      if (biggerWindows) {
+        totalPrice += 5000;
+      }
+      if (terrace) {
+        totalPrice += 20000;
+      }
+
+      document.getElementById("totalPrice").value = totalPrice.toLocaleString();
+    }
+
+    function submitForm() {
+      var form = document.getElementById("quotationForm");
+      // Dodać logikę do wysłania formularza (np. AJAX request)
+      // Tutaj można użyć biblioteki, takiej jak axios lub fetch, aby wysłać formularz na serwer.
+      // Przykład użycia zapytania fetch:
+      /*
+      fetch("url_do_endpointu", {
+        method: "POST",
+        body: new FormData(form)
+      })
+      .then(response => {
+        // Obsługa odpowiedzi od serwera
+      })
+      .catch(error => {
+        // Obsługa błędu
+      });
+      */
+    }
+  </script>
+</body>
+
+</html>

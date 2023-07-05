@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+    <title>Domy Modułowe</title>
+    <link rel="icon" type="image/png" href="/photos/GRUPA PERUN logo favicon.png">
+</head>
+<body>          
+    <div id="navbar" class="main-menu">
+        <nav class="navbar navbar-expand-md sticky">
+            <div class="container-xl">
+                <a class="navbar-brand" href="#">
+                    <img src="/photos/GRUPA PERUN logo favicon.png" alt="Logo" class="logo"/>
+                    <img src="/photos/GRUPA PERUN logo text.png" alt="Logo" class="logo logo-text"/>
+                </a>
+                
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="custom-link" href="#onas">O NAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="custom-link" href="#oferty">OFERTA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="custom-link" href="#pytania">Q&A</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="custom-link" href="#kontakt">KONTAKT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="custom-link" href="#oferty">WYCENA</a>
+                        </li>
+                    </ul>
+                
+            </div>
+        </nav>
+        
+        <!--Stworzyć specjalny navbar dla telefonu-->
+    </div>  
+    <div id="phone-navbar">
+        <nav class="phone-navbar">
+            
+            <div class="row">
+                <div class="col-2 mx-auto custom-phone-link side-nav-item">
+                    <a href="#" >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                            <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
+                            <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
+                          </svg>
+                          
+                    </a>
+                </div>
+                <div class="col-2 mx-auto custom-phone-link side-nav-item">
+                    <a href="#oferty">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-piggy-bank" viewBox="0 0 16 16">
+                            <path d="M5 6.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm1.138-1.496A6.613 6.613 0 0 1 7.964 4.5c.666 0 1.303.097 1.893.273a.5.5 0 0 0 .286-.958A7.602 7.602 0 0 0 7.964 3.5c-.734 0-1.441.103-2.102.292a.5.5 0 1 0 .276.962z"/>
+                            <path fill-rule="evenodd" d="M7.964 1.527c-2.977 0-5.571 1.704-6.32 4.125h-.55A1 1 0 0 0 .11 6.824l.254 1.46a1.5 1.5 0 0 0 1.478 1.243h.263c.3.513.688.978 1.145 1.382l-.729 2.477a.5.5 0 0 0 .48.641h2a.5.5 0 0 0 .471-.332l.482-1.351c.635.173 1.31.267 2.011.267.707 0 1.388-.095 2.028-.272l.543 1.372a.5.5 0 0 0 .465.316h2a.5.5 0 0 0 .478-.645l-.761-2.506C13.81 9.895 14.5 8.559 14.5 7.069c0-.145-.007-.29-.02-.431.261-.11.508-.266.705-.444.315.306.815.306.815-.417 0 .223-.5.223-.461-.026a.95.95 0 0 0 .09-.255.7.7 0 0 0-.202-.645.58.58 0 0 0-.707-.098.735.735 0 0 0-.375.562c-.024.243.082.48.32.654a2.112 2.112 0 0 1-.259.153c-.534-2.664-3.284-4.595-6.442-4.595zM2.516 6.26c.455-2.066 2.667-3.733 5.448-3.733 3.146 0 5.536 2.114 5.536 4.542 0 1.254-.624 2.41-1.67 3.248a.5.5 0 0 0-.165.535l.66 2.175h-.985l-.59-1.487a.5.5 0 0 0-.629-.288c-.661.23-1.39.359-2.157.359a6.558 6.558 0 0 1-2.157-.359.5.5 0 0 0-.635.304l-.525 1.471h-.979l.633-2.15a.5.5 0 0 0-.17-.534 4.649 4.649 0 0 1-1.284-1.541.5.5 0 0 0-.446-.275h-.56a.5.5 0 0 1-.492-.414l-.254-1.46h.933a.5.5 0 0 0 .488-.393zm12.621-.857a.565.565 0 0 1-.098.21.704.704 0 0 1-.044-.025c-.146-.09-.157-.175-.152-.223a.236.236 0 0 1 .117-.173c.049-.027.08-.021.113.012a.202.202 0 0 1 .064.199z"/>
+                          </svg>
+                          
+                    </a>
+                </div>
+                <div class="col-2 mx-auto custom-phone-link center-nav-item">
+                    <a href="#oferty">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-bag-check-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+                          </svg>
+                          
+                    </a>
+                </div>
+                <div class="col-2 mx-auto custom-phone-link side-nav-item">
+                    <a href="#onas">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                          </svg>
+                          
+                    </a>
+                </div>
+                <div class="col-2 mx-auto custom-phone-link side-nav-item">
+                    <a href="#kontakt">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                            <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z"/>
+                            <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"/>
+                          </svg>
+                          
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+        <div id="slider">
+            <div class="maindiv">
+                <div class="slidy">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <div class="slid first slider">
+                        <div class="box1 box-special">
+                            <div class="bg"></div>
+                            <!-- <div class="details container-xl">
+                                <h1 id="slider-header">Twój pierwszy krok do nowego domu</h1>
+                                <p id="slider-text">
+                                    Spełnij swoje marzenie o własnym domu dzięki naszym innowacyjnym domom szkieletowym - <b>Szybko, trwale i z stylem.</b>
+                                </p>
+                                <button class="custom-btn">Sprawdź</button>
+                            </div> -->
+                            <div class="illustration"></div>
+                        </div>
+                    </div>
+                    <div class="slid slider">
+                        <div class="box2 box">
+                            <div class="bg"></div>
+                            <div class="details">
+                                <h1 id="slider-header">Oszczędź czas i pieniądze</h1>
+                                <p id="slider-text">
+                                    Oszczędzaj czas i pieniądze dzięki naszym trwałym i ekonomicznym domom modułowym - <b>Pozwól sobie na własny wymarzony dom.</b>
+                                </p>
+                                <a href="#oferty"><button class="custom-btn">Sprawdź</button></a>
+                            </div>
+                            <div class="illustration"></div>
+                        </div>
+                    </div>
+                    <div class="slid slider">
+                        <div class="box3 box">
+                            <div class="bg"></div>
+                            <div class="details">
+                                <h1 id="slider-header">Biura wchodzą w grę!</h1>
+                                <p id="slider-text">
+                                    Biura na miarę Twoich potrzeb, elastyczne i wydajne budynki modułowe dostosowane do potrzeb Twojej firmy - <b>Nie pozwól się ograniczać</b>
+                                </p>
+                                <button class="custom-btn">Sprawdź</button>
+                            </div>
+                            <div class="illustration"></div>
+                        </div>
+                    </div>
+                    <div class="slid slider">
+                        <div class="box4 box">
+                            <div class="bg"></div>
+                            <div class="details">
+                                <h1 id="slider-header">Zamieszkaj w przyszłości już dziś</h1>
+                                <p id="slider-text">
+                                    Nowoczesne i stylowe domy modułowe spełnią wszystkie Twoje wymagania - <b>Marzenia nie mogą czekać.</b>
+                                </p>
+                                <button class="custom-btn">Sprawdź</button>
+                            </div>
+                            <div class="illustration"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn" id="firstbtn" onclick="change(getElementById('firstbtn'))"></label>
+                <label for="radio2" class="manual-btn" id="seccondbtn" onclick="change(getElementById('seccondbtn'))"></label>
+                <label for="radio3" class="manual-btn" id="thirdbtn" onclick="change(getElementById('thirdbtn'))"></label>
+                <label for="radio4" class="manual-btn" id="fourthbtn" onclick="change(getElementById('fourthbtn'))"></label>
+            </div>
+        </div> 
+    </div>
+    <div class="container test">
+        <!-- <div id="home"></div>
+        <h1 class="text-center">Domy Szkieletowe</h1>
+        <p class="lead text-center text-desc">Domy szkieletowe to coraz popularniejsza forma budowy domów, oferująca szybkość i ekonomię budowy w połączeniu z wysoką jakością i trwałością.</p>
+        <div class="row my-spacer">
+            <div class="background-color background-shape"></div>
+            <div class="col-md-6 specjal-image">
+                <img src="./photos/image1.jpg" alt="Image 1" class=" mx-auto d-block">
+            </div>
+            <div class="col-md-6 centered-text">
+                <p>Zbudowane na szkielecie z drewna lub metalu, takie domy są szybko montowane i gotowe do zamieszkania w ciągu kilku tygodni. Domy szkieletowe pozwalają na indywidualne dostosowanie wielu aspektów budynku, od wyglądu zewnętrznego po układ wnętrz.</p>
+            </div>
+        </div> -->
+        <!-- <h2 class="text-center mt-5 title">Zalety domów szkieletowych</h2> -->
+        <!-- <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" fill="currentColor" class="bi bi-clock-fill card-icon" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                        </svg>
+                        <h4 class="card-title">Szybkość budowy</h4>
+                        <p class="card-text">Domy szkieletowe są szybko montowane i gotowe do zamieszkania w ciągu kilku tygodni, co pozwala na oszczędność czasu i pieniędzy.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" fill="currentColor" class="bi bi-coin card-icon" viewBox="0 0 16 16">
+                            <path d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9H5.5zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518l.087.02z"/>
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/>
+                          </svg>
+                        <h4 class="card-title">Ekonomia</h4>
+                        <p class="card-text">Budowa domów szkieletowych jest tańsza niż tradycyjnych metod budowy, co pozwala na oszczędność pieniędzy bez kompromisów w jakości.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" fill="currentColor" class="bi bi-flag-fill card-icon" viewBox="0 0 16 16">
+                            <path d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001"/>
+                          </svg>
+                        <h4 class="card-title">Wysoka jakość i trwałość</h4>
+                        <p class="card-text">Domy szkieletowe są solidne i trwałe, a dzięki zastosowaniu wysokiej jakości materiałów, zapewniają komfort i bezpieczeństwo dla ich mieszkańców.</p>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+    <div class="test">
+        <div id="oferty"></div>
+            <div class="container-fluid">
+                <div class="gallery">
+                    <div class="row no-gutters specjal-row">
+                        <div class="col-md-4 ">
+                            
+                            <a href="houses/smerfetka/smerfetka.html"><div class="houses-background-settings" style="background-image: url(/houses/smerfetka/photos/zdjecie1.jpg)"></div></a>
+                                    
+                                        <div class="house-card-text">
+                                            
+                                            <h2>Smerfetka</h2><h5>Cena już od | 62900zł</h5>
+                                            
+                                            <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam nulla esse harum, sequi natus debitis nobis! Quas, ex quo est deleniti quasi animi, tempora vel beatae temporibus doloremque nesciunt ea.</p> -->
+                                            <ul>
+                                                <li>Powierzchnia zabudowy:  35m²</li>
+                                                <li>Powierzchnia użytkowa:   29m²</li>
+                                            </ul>
+                                            <div class="house-link">
+                                                <a href="houses/smerfetka/smerfetka.html">Sprawdź</a>
+                                            </div>
+                                        </div>
+                                    
+                                
+                            
+                        </div>
+                        <div class="col-md-4 ">
+                            <a href="/houses/polnocnymech/polnocnymech.html"><div class="houses-background-settings" style="background-image: url(/houses/polnocnymech/photos/zdjecie1.jpg)"></div></a>
+                                
+                                    <div class="house-card-text">
+                                        <h2>Bonifacy</h2><h5>Cena już od | 99000zł</h5>
+                                        <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam nulla esse harum, sequi natus debitis nobis! Quas, ex quo est deleniti quasi animi, tempora vel beatae temporibus doloremque nesciunt ea.</p> -->
+                                        <ul>
+                                            <li>Powierzchnia zabudowy:  35m²</li>
+                                            <li>Powierzchnia użytkowa:   44m²</li>
+                                        </ul>
+                                        <div class="house-link">
+                                            <a href="/houses/polnocnymech/polnocnymech.html">Sprawdź</a>
+                                            <!-- <a href="test.html">Wycena test</a> -->
+                                        </div>
+                                    </div>
+                                
+                            
+                        </div>
+                        <div class="col-md-4 ">
+                            <a href="houses/rozowytarasik/rozowytarasik.html"><div class="houses-background-settings" style="background-image: url(/houses/rozowytarasik/photos/zdjecie1.jpg)"></div></a>
+                                
+                                    <div class="house-card-text">
+                                        <h2>Puchatek</h2><h5>Cena już od | 129000zł</h5>
+                                        <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam nulla esse harum, sequi natus debitis nobis! Quas, ex quo est deleniti quasi animi, tempora vel beatae temporibus doloremque nesciunt ea.</p> -->
+                                        <ul>
+                                            <li>Powierzchnia zabudowy:  65m²</li>
+                                            <li>Powierzchnia użytkowa:   58m²</li>
+                                        </ul>
+                                        <div class="house-link">
+                                            <a href="houses/rozowytarasik/rozowytarasik.html">Sprawdź</a>
+                                        </div>    
+                                    </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div id="pytania"></div>
+    <div class="container-xl">
+        <div class="row">
+            <div class="col-md-5 col-sm-12">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-patch-question-fill qa-bi" viewBox="0 0 16 16">
+                    <path d="M5.933.87a2.89 2.89 0 0 1 4.134 0l.622.638.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636zM7.002 11a1 1 0 1 0 2 0 1 1 0 0 0-2 0zm1.602-2.027c.04-.534.198-.815.846-1.26.674-.475 1.05-1.09 1.05-1.986 0-1.325-.92-2.227-2.262-2.227-1.02 0-1.792.492-2.1 1.29A1.71 1.71 0 0 0 6 5.48c0 .393.203.64.545.64.272 0 .455-.147.564-.51.158-.592.525-.915 1.074-.915.61 0 1.03.446 1.03 1.084 0 .563-.208.885-.822 1.325-.619.433-.926.914-.926 1.64v.111c0 .428.208.745.585.745.336 0 .504-.24.554-.627z"/>
+                  </svg>
+            </div>
+            <div class="col-md-7 col-sm-12">
+                <h2 class="my-5">Pytania i odpowiedzi</h2>
+                <div class="accordion my-5" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Czym są domy modułowe?
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Domy modułowe to innowacyjne konstrukcje mieszkalne, które są prefabrykowane w fabryce, a następnie transportowane i montowane na miejscu budowy. Składają się z modułów, które są produkowane w kontrolowanych warunkach, co gwarantuje wysoką jakość i skrócenie czasu budowy.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Jakie są korzyści wynikające z wyboru domu modułowego? 
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Wybór domu modułowego niesie ze sobą wiele korzyści. Są one szybko budowane, co oznacza, że możesz się wprowadzić do swojego nowego domu znacznie szybciej niż przy tradycyjnej budowie. Są również bardziej energooszczędne, ekologiczne i bardziej dostosowane do zmieniających się potrzeb, dzięki możliwości rozbudowy i dostosowywania modułów.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Jakie są możliwości personalizacji domów modułowych? 
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Domy modułowe oferują szeroki zakres możliwości personalizacji. Możesz dostosować układ pomieszczeń, wybierać spośród różnych wzorów i stylów wykończenia, a także wybrać materiały i kolory, które odpowiadają Twoim preferencjom. Nasz zespół projektantów jest gotowy współpracować z Tobą, aby stworzyć dom modułowy, który idealnie spełni Twoje oczekiwania.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Czy domy modułowe są trwałe? 
+                          </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            Tak, domy modułowe są trwałe i solidne. Konstrukcje modułowe są projektowane z uwzględnieniem wytrzymałości i bezpieczeństwa. Moduły są wykonane z wysokiej jakości materiałów, które spełniają wszystkie standardy budowlane. W rezultacie otrzymujesz dom, który jest równie trwały, jak tradycyjnie budowany.
+                          </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Jakie są koszty związane z budową domu modułowego? 
+                          </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            Koszty związane z budową domu modułowego mogą się różnić w zależności od wielu czynników, takich jak rozmiar domu, poziom personalizacji, wybór materiałów i lokalizacja budowy. W porównaniu do tradycyjnej budowy, domy modułowe często są bardziej ekonomiczne, ponieważ proces prefabrykacji i kontroli jakości w fabryce może przynieść oszczędności czasu i kosztów.
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="onas"></div>
+        <div class="container-xl">
+            <h2 class="my-5">O nas</h2>
+            <p>Nasza firma powstała z myślą o dostarczeniu innowacyjnych domów modułowych, które spełniają oczekiwania naszych klientów. Nasze konstrukcje są oparte na najnowszych technologiach i materiałach wysokiej jakości, gwarantując trwałość i komfort przez wiele lat.<br><br>
+                Co wyróżnia nas spośród innych firm budowlanych, to nasze podejście do projektowania. Jesteśmy elastyczni i skupiamy się na indywidualnych potrzebach i preferencjach klientów. Nasz zespół architektów i projektantów jest gotowy przyjąć Twoje pomysły i zamienić je w rzeczywistość, tworząc dom modułowy, który idealnie odzwierciedla Twój styl życia i estetykę.<br><br>
+                Nasze domy modułowe są projektowane w taki sposób, aby być energooszczędne i przyjazne dla środowiska. <br><br>
+                Nasze usługi obejmują nie tylko projektowanie i budowę domów modułowych, ale także doradztwo na każdym etapie procesu. Nasi doświadczeni pracownicy służą pomocą i udzielają fachowych porad, abyś mógł podjąć najlepsze decyzje dotyczące swojego nowego domu.<br><br>
+                Zaufało nam już wielu klientów, którzy cieszą się komfortem i funkcjonalnością naszych domów modułowych. Jeśli marzysz o własnym, nowoczesnym i przyjaznym środowisku domu, zapraszamy do kontaktu z nami. Jesteśmy gotowi spełnić Twoje marzenia o idealnym domu jak z bajki.
+            </p>
+        </div>
+    
+    
+    <div id="kontakt"></div>
+    <div id="kontakt-part">
+        <div class="container-xl test my-5">
+            
+                
+                    <form id="kontakt-form">
+                        <h2>Skontaktuj się</h2>
+                        
+                        <div class="form-group">
+                            <label for="name">Imię i nazwisko:</label>
+                            <input type="text" class="form-control" id="name" placeholder="Wpisz swoje imię i nazwisko" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Adres e-mail:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Wpisz swój adres e-mail" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Wiadomość:</label>
+                            <textarea class="form-control" rows="5" id="message" placeholder="Wpisz swoją wiadomość" name="message" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="telephone">Numer Telefonu:</label>
+                            <input class="form-control" rows="2" id="phone" placeholder="Wpisz numer" name="phone" required></textarea>
+                        </div>
+                        <button type="submit" class="custom-btn">Wyślij</button>
+                        
+                    </form>
+                
+                
+            </div>
+        
+    </div>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-5 col-6">
+                    <h6 class="text-uppercase font-weight-bold">Dodatkowe informacje</h6>
+                    <p>Strona nie wykorzystuje plików cookies, dlatego nie ma potrzeby potwierdzania ich używania.</p>
+                    <a href="https://www.facebook.com/profile.php?id=100093424790497"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                      </svg></a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-6">
+                    <h6 class="text-uppercase font-weight-bold">Szybkie menu</h6>
+                    <ul>
+                        <li>
+                            <a href="../../index.html">HOME</a>
+                        </li>
+                        <li>
+                            <a href="../../index.html#">O NAS</a>
+                        </li>
+                        <li>
+                            <a href="../../index.html#oferty">OFERTA</a>
+                        </li>
+                        <li>
+                            <a href="../../index.html#kontakt">KONTAKT</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <h6 class="text-uppercase font-weight-bold">Kontakt</h6>
+                    <p>98-220 Zduńska Wola
+                    <br/> ul. Łaska 39/206
+                    <br/>kontakt@grupaperun.pl
+                    <br/><a href="tel:789-568-651">+48 789 568 651</a></p>
+                </div>
+            </div>
+        <div class="footer-copyright text-center">Strona wykonana przez: <a href="https://github.com/DO-Dawid">Dawid Olejniczak</a></div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
