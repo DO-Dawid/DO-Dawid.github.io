@@ -117,12 +117,20 @@
                     <div class="slid slider">
                         <div class="box2 box">
                             <div class="bg"></div>
-                            <div class="details">
-                                <h1 id="slider-header">Oszczędź czas i pieniądze</h1>
-                                <p id="slider-text">
-                                    Oszczędzaj czas i pieniądze dzięki naszym trwałym i ekonomicznym domom modułowym - <b>Pozwól sobie na własny wymarzony dom.</b>
-                                </p>
-                                <a href="#oferty"><button class="custom-btn">Sprawdź</button></a>
+                            <div class="container-xl">
+                                <div class="details row">
+                                    <div class="col-sm-7 col-12 my-auto" id="desc-slid">
+                                        <h1 id="slider-header">Oszczędź czas i pieniądze</h1>
+                                        <p id="slider-text">
+                                            Oszczędzaj czas i pieniądze dzięki naszym trwałym i ekonomicznym domom modułowym - <b>Pozwól sobie na własny wymarzony dom.</b>
+                                        </p>
+                                        <div class="row">
+                                            <div class="col-4" id="desc-slid">
+                                                <a href="#oferty"><button class="custom-btn">Sprawdź</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="illustration"></div>
                         </div>
@@ -130,12 +138,21 @@
                     <div class="slid slider">
                         <div class="box3 box">
                             <div class="bg"></div>
-                            <div class="details">
-                                <h1 id="slider-header">Biura wchodzą w grę!</h1>
-                                <p id="slider-text">
-                                    Biura na miarę Twoich potrzeb, elastyczne i wydajne budynki modułowe dostosowane do potrzeb Twojej firmy - <b>Nie pozwól się ograniczać</b>
-                                </p>
-                                <button class="custom-btn">Sprawdź</button>
+                            <div class="container-xl">
+                                <div class="details row">
+                                    <div class="col-sm-7 col-12 my-auto" id="desc-slid">
+                                        <h1 id="slider-header">Biura wchodzą w grę!</h1>
+                                        <p id="slider-text">
+                                            Biura na miarę Twoich potrzeb, elastyczne i wydajne budynki modułowe dostosowane do potrzeb Twojej firmy - <b>Nie pozwól się ograniczać</b>
+                                        </p>
+                                        <div class="row">
+                                            <div class="col-4" id="desc-slid">
+                                                <a href="#oferty"><button class="custom-btn">Sprawdź</button></a>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
                             </div>
                             <div class="illustration"></div>
                         </div>
@@ -143,28 +160,50 @@
                     <div class="slid slider">
                         <div class="box4 box">
                             <div class="bg"></div>
-                            <div class="details">
-                                <h1 id="slider-header">Zamieszkaj w przyszłości już dziś</h1>
-                                <p id="slider-text">
-                                    Nowoczesne i stylowe domy modułowe spełnią wszystkie Twoje wymagania - <b>Marzenia nie mogą czekać.</b>
-                                </p>
-                                <button class="custom-btn">Sprawdź</button>
+                            <div class="container-xl">
+                                <div class="details row">
+                                    <div class="col-sm-7 col-12 my-auto" id="desc-slid">
+                                        <h1 id="slider-header">Zamieszkaj w przyszłości już dziś</h1>
+                                        <p id="slider-text">
+                                            Nowoczesne i stylowe domy modułowe spełnią wszystkie Twoje wymagania - <b>Marzenia nie mogą czekać.</b>
+                                        </p>
+                                        <div class="row">
+                                            <div class="col-4" id="desc-slid">
+                                                <a href="#oferty"><button class="custom-btn">Sprawdź</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="illustration"></div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="navigation-manual">
-                <label for="radio1" class="manual-btn" id="firstbtn" onclick="change(getElementById('firstbtn'))"></label>
-                <label for="radio2" class="manual-btn" id="seccondbtn" onclick="change(getElementById('seccondbtn'))"></label>
-                <label for="radio3" class="manual-btn" id="thirdbtn" onclick="change(getElementById('thirdbtn'))"></label>
-                <label for="radio4" class="manual-btn" id="fourthbtn" onclick="change(getElementById('fourthbtn'))"></label>
+            <div class="container overlap-navigation">
+                <div class="row">
+                    <div class="navigation-manual col-6 col-sm-4 mx-auto">
+                        <div class="row">
+                            <div class="col-3 mx-auto">
+                                <label for="radio1" class="manual-btn test2" id="firstbtn" onclick="change(getElementById('firstbtn'))"></label>
+                            </div>
+                            <div class="col-3 mx-auto">
+                                <label for="radio2" class="manual-btn test2" id="seccondbtn" onclick="change(getElementById('seccondbtn'))"></label>
+                            </div>
+                            <div class="col-3 mx-auto">
+                                <label for="radio3" class="manual-btn test2" id="thirdbtn" onclick="change(getElementById('thirdbtn'))"></label>
+                            </div>
+                            <div class="col-3 mx-auto">
+                                <label for="radio4" class="manual-btn test2" id="fourthbtn" onclick="change(getElementById('fourthbtn'))"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div> 
-    </div>
-    <div class="container test">
-        <!-- <div id="home"></div>
+    
+    <!-- <div class="container">
+         <div id="home"></div>
         <h1 class="text-center">Domy Szkieletowe</h1>
         <p class="lead text-center text-desc">Domy szkieletowe to coraz popularniejsza forma budowy domów, oferująca szybkość i ekonomię budowy w połączeniu z wysoką jakością i trwałością.</p>
         <div class="row my-spacer">
@@ -213,13 +252,13 @@
                     </div>
                 </div>
             </div>
-        </div> -->
-    </div>
-    <div class="test">
+        </div> 
+    </div> -->
+    
         <div id="oferty"></div>
             <div class="container-fluid">
                 <div class="gallery">
-                    <div class="row no-gutters specjal-row">
+                    <div class="row no-gutters">
                         <div class="col-md-4 ">
                             
                             <a href="houses/smerfetka/smerfetka.html"><div class="houses-background-settings" style="background-image: url(/houses/smerfetka/photos/zdjecie1.jpg)"></div></a>
@@ -242,7 +281,7 @@
                             
                         </div>
                         <div class="col-md-4 ">
-                            <a href="/houses/polnocnymech/polnocnymech.html"><div class="houses-background-settings" style="background-image: url(/houses/polnocnymech/photos/zdjecie1.jpg)"></div></a>
+                            <a href="/houses/bonifacy/bonifacy.html"><div class="houses-background-settings" style="background-image: url(/houses/bonifacy/photos/zdjecie1.jpg)"></div></a>
                                 
                                     <div class="house-card-text">
                                         <h2>Bonifacy</h2><h5>Cena już od | 99000zł</h5>
@@ -252,7 +291,7 @@
                                             <li>Powierzchnia użytkowa:   44m²</li>
                                         </ul>
                                         <div class="house-link">
-                                            <a href="/houses/polnocnymech/polnocnymech.html">Sprawdź</a>
+                                            <a href="/houses/bonifacy/bonifacy.html">Sprawdź</a>
                                             <!-- <a href="test.html">Wycena test</a> -->
                                         </div>
                                     </div>
@@ -260,7 +299,7 @@
                             
                         </div>
                         <div class="col-md-4 ">
-                            <a href="houses/rozowytarasik/rozowytarasik.html"><div class="houses-background-settings" style="background-image: url(/houses/rozowytarasik/photos/zdjecie1.jpg)"></div></a>
+                            <a href="houses/puchatek/puchatek.html"><div class="houses-background-settings" style="background-image: url(/houses/puchatek/photos/zdjecie1.jpg)"></div></a>
                                 
                                     <div class="house-card-text">
                                         <h2>Puchatek</h2><h5>Cena już od | 129000zł</h5>
@@ -270,7 +309,7 @@
                                             <li>Powierzchnia użytkowa:   58m²</li>
                                         </ul>
                                         <div class="house-link">
-                                            <a href="houses/rozowytarasik/rozowytarasik.html">Sprawdź</a>
+                                            <a href="houses/puchatek/puchatek.html">Sprawdź</a>
                                         </div>    
                                     </div>
                             
@@ -278,7 +317,7 @@
                     </div>
                 </div>
             </div>
-    </div>
+    
     <div id="pytania"></div>
     <div class="container-xl">
         <div class="row">
@@ -412,10 +451,10 @@
                     <h6 class="text-uppercase font-weight-bold">Szybkie menu</h6>
                     <ul>
                         <li>
-                            <a href="../../index.html">HOME</a>
+                            <a href="../../index.html#">HOME</a>
                         </li>
                         <li>
-                            <a href="../../index.html#">O NAS</a>
+                            <a href="../../index.html#onas">O NAS</a>
                         </li>
                         <li>
                             <a href="../../index.html#oferty">OFERTA</a>

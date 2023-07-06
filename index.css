@@ -206,7 +206,7 @@ body{
         text-align: center;
     }
     .slid .custom-btn{
-        margin-left: 113px;
+        
     }
 }
 
@@ -218,7 +218,7 @@ body{
     width: 100%;
     height: 110vh;
     overflow: hidden;
-    
+    margin-bottom: -200px;
 }
 .slider{
     display: flex;
@@ -229,12 +229,23 @@ body{
 }
 .slider .box, .box-special{
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
     overflow: hidden;
     position: relative;
-    
+}
+@media (max-width: 768px) {
+    #desc-slid {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .box1{
+        background-image: url(/photos/marble_with_logo_phone.jpg)!important;
+    }
+    .slider{
+        height: 89vh;
+    }
+    #slider{
+        margin-bottom: -300px;
+    }
 }
 
 .box-special .bg{
@@ -269,6 +280,7 @@ body{
     padding-left: 20rem;
     transform-origin: 0 100%;
 }
+
 .slider .box p{
     font-size:20px;
     font-weight: 400;
@@ -284,9 +296,9 @@ body{
     transform: skewX(10deg);
 }
 .slider .box .details{
-    margin-left: 10%;
-    z-index: 100;
-    
+    position: absolute;
+    z-index: 200;
+    height: 100%;
 }
 .slidy{
     width: 500%;
@@ -306,30 +318,30 @@ body{
 #slider-text{
     font-size: 1.5em;
 }
+.overlap-navigation{
+    margin-top: -100px!important;
+}
 .navigation-manual{
-    position: absolute;
-    width: 20%;
-    margin-top: -100px;
-    left: 40%;
-    display: flex;
-    justify-content: center;
+    
+    
     background-color: white;
     padding-top: 20px;
     padding-bottom: 10px;
     border-radius: 16px;
     z-index: 200;
 }
+.navigation-manual .mx-auto{
+    text-align: center;
+}
 @media screen and (max-width:576px){
-    .navigation-manual{
-        left: 14%;
-    }
+    
     .slider .box .details{
-        width: 345px;
+        
     }
 }
 .manual-btn{
     border: 2px solid var(--main-color-sheme);
-    padding: 5px;
+    padding: 7px;
     border-radius: 10px;
     cursor: pointer;
     transition: 1s;
@@ -337,9 +349,7 @@ body{
 .checked {
     background: var(--main-color-sheme);
 }
-.manual-btn:not(:last-child){
-    margin-right: 40px;
-}
+
 .manual-btn:hover{
     background: var(--main-color-sheme);
 }
@@ -377,6 +387,9 @@ body{
 }
 .box4{
     background-image: url("/photos/bathroom1x.jpg");
+}
+.box1, .box2, .box3, .box4{
+    width: 100%;
 }
 .spacerek{
    margin-top: 100vh; 
@@ -675,9 +688,17 @@ body{
         content: "\A";
         white-space: pre;
     }
+    .short-description{
+        font-size: 25px;
+        text-align: center !important;
+    }
 }
-
-
+.short-description{
+    text-align: justify;
+}
+span{
+    color: var(--main-color-sheme);
+}
 .house-details .card{
     padding: 0px;
     transition: 1s;
@@ -819,10 +840,7 @@ textarea {
 
 
 
-.test{
-    margin-top: -160px;
-    margin-bottom: 80px;
-}
+
 
 
 @media screen and (max-width:600px){
@@ -837,7 +855,5 @@ textarea {
     #navbar{
         display: none;
     }
-    .navigation-manual{
-        width: 300px;
-    }
+    
 }
