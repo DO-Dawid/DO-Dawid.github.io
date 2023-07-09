@@ -89,7 +89,7 @@ body{
     transition: 0.2s;
 }
 .custom-link{
-    color: #666;
+    color: #666 !important;
     transition: 0.2s;
     display: block;
     text-decoration: none;

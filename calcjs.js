@@ -30,4 +30,42 @@ function calculatePrice(checkbox, additionalCost) {
   // Wyświetlamy wynik w elemencie span
   resultElement.textContent = `${result}zł`;
 }
+function updatePrice() {
+  var houseType = parseInt(document.getElementById("houseType").value);
+  var airConditioning = document.getElementById("airConditioning").checked;
+  var biggerWindows = document.getElementById("biggerWindows").checked;
+  var terrace = document.getElementById("terrace").checked;
+  var totalPrice = houseType;
+
+  if (airConditioning) {
+    totalPrice += 10000;
+  }
+  if (biggerWindows) {
+    totalPrice += 5000;
+  }
+  if (terrace) {
+    totalPrice += 20000;
+  }
+
+  document.getElementById("totalPrice").value = totalPrice.toLocaleString();
+}
+
+function submitForm() {
+  var form = document.getElementById("quotationForm");
+  // Dodać logikę do wysłania formularza (np. AJAX request)
+  // Tutaj można użyć biblioteki, takiej jak axios lub fetch, aby wysłać formularz na serwer.
+  // Przykład użycia zapytania fetch:
+  /*
+  fetch("url_do_endpointu", {
+    method: "POST",
+    body: new FormData(form)
+  })
+  .then(response => {
+    // Obsługa odpowiedzi od serwera
+  })
+  .catch(error => {
+    // Obsługa błędu
+  });
+  */
+}
 
