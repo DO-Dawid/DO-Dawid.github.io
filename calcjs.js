@@ -2,18 +2,29 @@
 const resultElement = document.getElementById('result');
 
 // Ustawiamy początkową wartość wyniku na 40000zł
-let result = 40000;
+console.log(document.getElementById('result').textContent)
+  if(document.getElementById('result').textContent === "62900zł"){
+    result = 62900;
+  }
+  if(document.getElementById('result').textContent === "99000zł"){
+    result = 99000;
+  }
+  if(document.getElementById('result').textContent === "129000zł"){
+    result = 129000;
+  }
 
 // Obiekt z informacją, czy dany dodatek został już wybrany
 const addons = {
   aircon: false,
-  furniture: false,
+  terrace: false,
+  biggerwindows: false,
   solar: false,
 }
 
 // Funkcja do aktualizacji wyniku
 function calculatePrice(checkbox, additionalCost) {
   // Sprawdzamy, który dodatek został wybrany
+  
   const selectedAddon = checkbox.value;
 
   // Sprawdzamy, czy wybrany dodatek został już dodany
