@@ -62,9 +62,31 @@ body{
     margin-bottom: 120px;
 }
 
+.carousel-item{
+    max-height: 500px;
+}
 
 /* --- Navbar ---*/
-
+.phone-sidebar{
+    background-color: white;
+    padding-inline: 15px;
+    padding-top: 14px;
+    position:fixed;
+    right: -154px;
+    top: 120px;
+    border-radius: 14px;
+    transition: 0.5s;
+    z-index: 999;
+}
+.phone-sidebar a{
+    font-size: large;
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+}
+.phone-sidebar:hover{
+    right: 0px;
+}
 #navbar{
     z-index: 100;
 }
