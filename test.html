@@ -1,118 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carousel Gallery</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <title>Wycena domków szkieletowych</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Domki szkieletowe</a>
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="#" data-toggle="modal" data-target="#quotationModal">Wycena</a>
-      </li>
-    </ul>
-  </nav>
-
-  <!-- Quotation Modal -->
-  <div class="modal fade" id="quotationModal" tabindex="-1" role="dialog" aria-labelledby="quotationModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="quotationModalLabel">Wycena domku szkieletowego</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <form id="quotationForm">
-            <div class="form-group">
-              <label for="houseType">Typ domku:</label>
-              <select class="form-control" id="houseType" onchange="updatePrice()">
-                <option value="100000">Dom 1</option>
-                <option value="150000">Dom 2</option>
-                <option value="200000">Dom 3</option>
-              </select>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col">
+        <div id="carouselExample" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/photos/Domek_podwórko.jpg" class="d-block w-100" alt="Image 1">
             </div>
-            <div class="form-group">
-              <label for="options">Dodatkowe opcje:</label>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="airConditioning" onchange="updatePrice()">
-                <label class="form-check-label" for="airConditioning">Klimatyzacja (+10,000)</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="biggerWindows" onchange="updatePrice()">
-                <label class="form-check-label" for="biggerWindows">Większe okna (+5,000)</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="terrace" onchange="updatePrice()">
-                <label class="form-check-label" for="terrace">Taras (+20,000)</label>
-              </div>
+            <div class="carousel-item">
+              <img src="/photos/Domek_podwórko2.jpg" class="d-block w-100" alt="Image 2">
             </div>
-            <div class="form-group">
-              <label for="totalPrice">Cena całkowita:</label>
-              <input type="text" class="form-control" id="totalPrice" readonly>
+            <div class="carousel-item">
+              <img src="/photos/Domek_podwórko3_kuchnia.jpg" class="d-block w-100" alt="Image 3">
             </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary" onclick="submitForm()">Wyślij</button>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <div class="modal-container">
+    <span class="close-btn">&times;</span>
+    <div class="modal-content">
+      <img src="" alt="Modal Image" class="modal-image">
+      <div class="gallery-thumbnails">
+        <img src="/photos/Domek_podwórko.jpg" class="thumbnail active" alt="Image 1">
+        <img src="/photos/Domek_podwórko2.jpg" class="thumbnail" alt="Image 2">
+        <img src="/photos/Domek_podwórko3_kuchnia.jpg" class="thumbnail" alt="Image 3">
+      </div>
+    </div>
+  </div>
+  <style>
+    .carousel-inner img {
+  cursor: pointer;
+}
+
+.modal-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 999;
+}
+
+.close-btn {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.modal-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.modal-image {
+  max-width: 90%;
+  max-height: 80%;
+}
+
+.gallery-thumbnails {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.thumbnail {
+  margin: 0 5px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border 0.3s ease;
+}
+
+.thumbnail.active {
+  border-color: white;
+}
+
+  </style>
   <script>
-    function updatePrice() {
-      var houseType = parseInt(document.getElementById("houseType").value);
-      var airConditioning = document.getElementById("airConditioning").checked;
-      var biggerWindows = document.getElementById("biggerWindows").checked;
-      var terrace = document.getElementById("terrace").checked;
-      var totalPrice = houseType;
+    const carouselImages = document.querySelectorAll('.carousel-inner img');
+const modalContainer = document.querySelector('.modal-container');
+const modalImage = document.querySelector('.modal-image');
+const thumbnails = document.querySelectorAll('.thumbnail');
 
-      if (airConditioning) {
-        totalPrice += 10000;
-      }
-      if (biggerWindows) {
-        totalPrice += 5000;
-      }
-      if (terrace) {
-        totalPrice += 20000;
-      }
+// Show the gallery modal with the clicked image
+carouselImages.forEach((image, index) => {
+  image.addEventListener('click', () => {
+    modalImage.src = image.src;
+    modalContainer.style.display = 'flex';
+    modalContainer.classList.add('open');
+    setActiveThumbnail(index);
+  });
+});
 
-      document.getElementById("totalPrice").value = totalPrice.toLocaleString();
+// Close the gallery modal when clicking the close button
+const closeBtn = document.querySelector('.close-btn');
+closeBtn.addEventListener('click', () => {
+  modalContainer.style.display = 'none';
+  modalContainer.classList.remove('open');
+});
+
+// Show the selected thumbnail image in the main modal
+thumbnails.forEach((thumbnail, index) => {
+  thumbnail.addEventListener('click', () => {
+    const selectedImage = carouselImages[index];
+    modalImage.src = selectedImage.src;
+    setActiveThumbnail(index);
+  });
+});
+
+// Set the active thumbnail style
+function setActiveThumbnail(index) {
+  thumbnails.forEach((thumbnail, idx) => {
+    if (idx === index) {
+      thumbnail.classList.add('active');
+    } else {
+      thumbnail.classList.remove('active');
     }
-
-    function submitForm() {
-      var form = document.getElementById("quotationForm");
-      // Dodać logikę do wysłania formularza (np. AJAX request)
-      // Tutaj można użyć biblioteki, takiej jak axios lub fetch, aby wysłać formularz na serwer.
-      // Przykład użycia zapytania fetch:
-      /*
-      fetch("url_do_endpointu", {
-        method: "POST",
-        body: new FormData(form)
-      })
-      .then(response => {
-        // Obsługa odpowiedzi od serwera
-      })
-      .catch(error => {
-        // Obsługa błędu
-      });
-      */
-    }
+  });
+}
   </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
 </body>
-
 </html>
