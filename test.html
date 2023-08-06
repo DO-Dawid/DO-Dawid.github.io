@@ -48,10 +48,12 @@
     </div>
   </div>
   <style>
-    .carousel-inner img {
+    /* Bootstrap carousel styles */
+.carousel-inner img {
   cursor: pointer;
 }
 
+/* Gallery modal styles */
 .modal-container {
   display: none;
   position: fixed;
@@ -74,6 +76,7 @@
 
 .modal-content {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100%;
@@ -82,6 +85,7 @@
 .modal-image {
   max-width: 90%;
   max-height: 80%;
+  object-fit: contain;
 }
 
 .gallery-thumbnails {
@@ -91,15 +95,25 @@
 }
 
 .thumbnail {
+  width: 100px; /* Szerokość miniatury */
+  height: 60px; /* Wysokość miniatury */
   margin: 0 5px;
   cursor: pointer;
   border: 2px solid transparent;
   transition: border 0.3s ease;
+  overflow: hidden;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .thumbnail.active {
   border-color: white;
 }
+
 
   </style>
   <script>
